@@ -10,31 +10,35 @@ class ViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    let initialLocation = CLLocation(latitude: 36.778259, longitude: -119.417931)
-    mapView.centerToLocation(initialLocation)
-    
-    let unitedStatesCoordinates = CLLocation(latitude: 36.778259, longitude: -119.417931)
-    let region = MKCoordinateRegion(
-      center: unitedStatesCoordinates.coordinate,
-      latitudinalMeters: 2000000,
-      longitudinalMeters: 2000000)
-    mapView.setCameraBoundary(
-      MKMapView.CameraBoundary(coordinateRegion: region),
-      animated: true)
-    
-    let zoomRange = MKMapView.CameraZoomRange(maxCenterCoordinateDistance: 2000000)
-    mapView.setCameraZoomRange(zoomRange, animated: true)
-    
-    mapView.delegate = self
-    
-    mapView.register(
-      AnnotationView.self,
-      forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
-    
-    loadInitialData()
-    mapView.addAnnotations(artworks)
+    setupInitialData()
   }
+    
+  func setupInitialData()
+    {
+        let initialLocation = CLLocation(latitude: 36.778259, longitude: -119.417931)
+        mapView.centerToLocation(initialLocation)
+        
+        let unitedStatesCoordinates = CLLocation(latitude: 36.778259, longitude: -119.417931)
+        let region = MKCoordinateRegion(
+          center: unitedStatesCoordinates.coordinate,
+          latitudinalMeters: 2000000,
+          longitudinalMeters: 2000000)
+        mapView.setCameraBoundary(
+          MKMapView.CameraBoundary(coordinateRegion: region),
+          animated: true)
+        
+        let zoomRange = MKMapView.CameraZoomRange(maxCenterCoordinateDistance: 2000000)
+        mapView.setCameraZoomRange(zoomRange, animated: true)
+        
+        mapView.delegate = self
+        
+        mapView.register(
+          AnnotationView.self,
+          forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
+        
+        loadInitialData()
+        mapView.addAnnotations(artworks)
+    }
   
     func deleteNilData()
     {
