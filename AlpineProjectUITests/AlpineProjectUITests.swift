@@ -1,9 +1,4 @@
-//
-//  AlpineProjectUITests.swift
-//  AlpineProjectUITests
-//
-//  Created by Mobolaji Moronfolu on 11/30/20.
-//
+
 
 import XCTest
 

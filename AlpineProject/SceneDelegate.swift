@@ -1,9 +1,3 @@
-//
-//  SceneDelegate.swift
-//  AlpineProject
-//
-//  Created by Mobolaji Moronfolu on 11/30/20.
-//
 
 import UIKit
 

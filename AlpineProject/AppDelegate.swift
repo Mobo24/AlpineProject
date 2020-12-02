@@ -1,9 +1,4 @@
-//
-//  AppDelegate.swift
-//  AlpineProject
-//
-//  Created by Mobolaji Moronfolu on 11/30/20.
-//
+
 
 import UIKit
 import CoreData
@@ -76,6 +71,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
+//    func checkDataStore()
+//    {
+//        let coreData = CoreData
+//        
+//    }
 
 }
 

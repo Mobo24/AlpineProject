@@ -1,0 +1,40 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-121.30762,44.0575671]
+      },
+      "properties": {
+        "city": "Bend",
+  "state": "OR",
+  "population": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.383824343,40.626644192]
+      },
+      "properties": {
+        "city": "Redding",
+  "state": "CA",
+  "population": 93000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.4578,37.769282]
+      },
+      "properties": {
+        "city": "San Francisco",
+  "state": "CA",
+  "population": 3456789
+      }
+    }]
+}

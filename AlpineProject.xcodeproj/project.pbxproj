@@ -10,12 +10,15 @@
 		7C99F84C2574F6E40014F553 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C99F84B2574F6E40014F553 /* AppDelegate.swift */; };
 		7C99F84E2574F6E40014F553 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C99F84D2574F6E40014F553 /* SceneDelegate.swift */; };
 		7C99F8502574F6E40014F553 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C99F84F2574F6E40014F553 /* ViewController.swift */; };
-		7C99F8532574F6E40014F553 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C99F8512574F6E40014F553 /* Main.storyboard */; };
 		7C99F8562574F6E40014F553 /* AlpineProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7C99F8542574F6E40014F553 /* AlpineProject.xcdatamodeld */; };
 		7C99F8582574F6E90014F553 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C99F8572574F6E90014F553 /* Assets.xcassets */; };
 		7C99F85B2574F6E90014F553 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C99F8592574F6E90014F553 /* LaunchScreen.storyboard */; };
 		7C99F8662574F6EA0014F553 /* AlpineProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C99F8652574F6EA0014F553 /* AlpineProjectTests.swift */; };
 		7C99F8712574F6EA0014F553 /* AlpineProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C99F8702574F6EA0014F553 /* AlpineProjectUITests.swift */; };
+		7C99F88D2574F9940014F553 /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C99F88C2574F9940014F553 /* Annotation.swift */; };
+		7C99F8922574F9AB0014F553 /* AnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C99F8912574F9AB0014F553 /* AnnotationView.swift */; };
+		7C99F8972574FB880014F553 /* Locations.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 7C99F8962574FB880014F553 /* Locations.geojson */; };
+		7C99F8F1257704A10014F553 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C99F8F0257704A10014F553 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +43,6 @@
 		7C99F84B2574F6E40014F553 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C99F84D2574F6E40014F553 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7C99F84F2574F6E40014F553 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7C99F8522574F6E40014F553 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7C99F8552574F6E40014F553 /* AlpineProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AlpineProject.xcdatamodel; sourceTree = "<group>"; };
 		7C99F8572574F6E90014F553 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C99F85A2574F6E90014F553 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +53,10 @@
 		7C99F86C2574F6EA0014F553 /* AlpineProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlpineProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C99F8702574F6EA0014F553 /* AlpineProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlpineProjectUITests.swift; sourceTree = "<group>"; };
 		7C99F8722574F6EA0014F553 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C99F88C2574F9940014F553 /* Annotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Annotation.swift; sourceTree = "<group>"; };
+		7C99F8912574F9AB0014F553 /* AnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationView.swift; sourceTree = "<group>"; };
+		7C99F8962574FB880014F553 /* Locations.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = Locations.geojson; sourceTree = "<group>"; };
+		7C99F8F0257704A10014F553 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,7 @@
 				7C99F8642574F6E90014F553 /* AlpineProjectTests */,
 				7C99F86F2574F6EA0014F553 /* AlpineProjectUITests */,
 				7C99F8492574F6E40014F553 /* Products */,
+				7C99F8882574F81F0014F553 /* Model */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,10 +111,13 @@
 				7C99F84B2574F6E40014F553 /* AppDelegate.swift */,
 				7C99F84D2574F6E40014F553 /* SceneDelegate.swift */,
 				7C99F84F2574F6E40014F553 /* ViewController.swift */,
-				7C99F8512574F6E40014F553 /* Main.storyboard */,
+				7C99F8F0257704A10014F553 /* Main.storyboard */,
 				7C99F8572574F6E90014F553 /* Assets.xcassets */,
 				7C99F8592574F6E90014F553 /* LaunchScreen.storyboard */,
 				7C99F85C2574F6E90014F553 /* Info.plist */,
+				7C99F8962574FB880014F553 /* Locations.geojson */,
+				7C99F88C2574F9940014F553 /* Annotation.swift */,
+				7C99F8912574F9AB0014F553 /* AnnotationView.swift */,
 				7C99F8542574F6E40014F553 /* AlpineProject.xcdatamodeld */,
 			);
 			path = AlpineProject;
@@ -129,6 +139,13 @@
 				7C99F8722574F6EA0014F553 /* Info.plist */,
 			);
 			path = AlpineProjectUITests;
+			sourceTree = "<group>";
+		};
+		7C99F8882574F81F0014F553 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +215,7 @@
 				TargetAttributes = {
 					7C99F8472574F6E40014F553 = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 					7C99F8602574F6E90014F553 = {
 						CreatedOnToolsVersion = 12.2;
@@ -235,8 +253,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C99F85B2574F6E90014F553 /* LaunchScreen.storyboard in Resources */,
+				7C99F8972574FB880014F553 /* Locations.geojson in Resources */,
 				7C99F8582574F6E90014F553 /* Assets.xcassets in Resources */,
-				7C99F8532574F6E40014F553 /* Main.storyboard in Resources */,
+				7C99F8F1257704A10014F553 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +283,8 @@
 				7C99F8502574F6E40014F553 /* ViewController.swift in Sources */,
 				7C99F84C2574F6E40014F553 /* AppDelegate.swift in Sources */,
 				7C99F8562574F6E40014F553 /* AlpineProject.xcdatamodeld in Sources */,
+				7C99F8922574F9AB0014F553 /* AnnotationView.swift in Sources */,
+				7C99F88D2574F9940014F553 /* Annotation.swift in Sources */,
 				7C99F84E2574F6E40014F553 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,14 +321,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7C99F8512574F6E40014F553 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7C99F8522574F6E40014F553 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7C99F8592574F6E90014F553 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -440,6 +453,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W32Q6748QC;
 				INFOPLIST_FILE = AlpineProject/Info.plist;
@@ -449,6 +463,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cpp.AlpineProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -459,6 +475,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W32Q6748QC;
 				INFOPLIST_FILE = AlpineProject/Info.plist;
@@ -468,6 +485,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cpp.AlpineProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

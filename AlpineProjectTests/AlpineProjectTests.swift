@@ -1,9 +1,3 @@
-//
-//  AlpineProjectTests.swift
-//  AlpineProjectTests
-//
-//  Created by Mobolaji Moronfolu on 11/30/20.
-//
 
 import XCTest
 @testable import AlpineProject
