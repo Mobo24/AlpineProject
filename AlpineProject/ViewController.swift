@@ -11,14 +11,12 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-   
-    //context.fetch()
     let initialLocation = CLLocation(latitude: 36.778259, longitude: -119.417931)
     mapView.centerToLocation(initialLocation)
     
-    let THEUNITEDSTATES = CLLocation(latitude: 36.778259, longitude: -119.417931)
+    let unitedStatesCoordinates = CLLocation(latitude: 36.778259, longitude: -119.417931)
     let region = MKCoordinateRegion(
-      center: THEUNITEDSTATES.coordinate,
+      center: unitedStatesCoordinates.coordinate,
       latitudinalMeters: 2000000,
       longitudinalMeters: 2000000)
     mapView.setCameraBoundary(
@@ -38,7 +36,7 @@ class ViewController: UIViewController {
     mapView.addAnnotations(artworks)
   }
   
-    func deleteAllData()
+    func deleteNilData()
     {
         //used this for testing and deleting unwanted core data entry points which i could not get to the bottom of on time
         let request = Location.fetchRequest() as NSFetchRequest<Location>
@@ -58,7 +56,7 @@ class ViewController: UIViewController {
         }
     }
     
-    func checkAvailabilityCity(entity: String)->Bool
+    func checkAvailabilityCity(entity: String) -> Bool
     {
         do{
             let request = Location.fetchRequest() as NSFetchRequest<Location>
@@ -86,7 +84,7 @@ class ViewController: UIViewController {
                 return documentsDirectory.appendingPathComponent(fileName)
     }
     
-    func checkAvailabilityState(entity: String)->Bool
+    func checkAvailabilityState(entity: String) -> Bool
     {
         do{
             let request = Location.fetchRequest() as NSFetchRequest<Location>
@@ -158,7 +156,7 @@ class ViewController: UIViewController {
         .compactMap { $0 as? MKGeoJSONFeature }
         
       let validWorks = features.compactMap(Annotation.init)
-        deleteAllData()
+        deleteNilData()
         var Anno = [Annotation]()
         for index in 0...(validWorks.count)-1
         {
@@ -198,7 +196,6 @@ class ViewController: UIViewController {
                         }
                         
                     }
-                   
                    
                 }
                 catch{
@@ -267,8 +264,6 @@ extension ViewController: MKMapViewDelegate {
                         }
                       
                     }
-                   
-
                    
                 }
             }

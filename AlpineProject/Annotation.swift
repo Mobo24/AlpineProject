@@ -60,17 +60,6 @@ class Annotation: NSObject, MKAnnotation {
     return mapItem
   }
   
-//  var markerTintColor: UIColor  {
-//    switch title {
-//    case "OR":
-//      return .red
-//    case "CA":
-//      return .cyan
-//    default:
-//      return .green
-//    }
-//  }
-  
   var image: UIImage {
     guard let name = title else { return #imageLiteral(resourceName: "pin") }
     
